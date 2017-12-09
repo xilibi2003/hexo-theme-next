@@ -53,7 +53,7 @@ footer:
     version: false
   # -------------------------------------------------------------
   # Any custom text can be defined here.
-  custom_text: <a target="_blank" href="http://www.miitbeian.gov.cn/">粤ICP备17140514号-1</a>
+  custom_text: 
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -78,9 +78,9 @@ index_with_subtitle: false
 
 # Schemes
 #scheme: Muse
-#scheme: Mist
-scheme: Pisces
-#scheme: Gemini
+scheme: Mist
+#scheme: Pisces
+# scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -173,7 +173,7 @@ post_wordcount:
 
 # Wechat Subscriber
 wechat_subscriber:
-  enabled: true
+  enabled: false
   qcode: /images/qrcode.jpg
   description: 微信号：区块链技术剖析，欢迎订阅
 
@@ -381,7 +381,7 @@ gitment:
 #           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
 #           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
 needmoreshare2:
-  enable: true
+  enable: false
   postbottom:
     enable: false
     options:
@@ -530,7 +530,7 @@ calendar:
 
 # Algolia Search
 algolia_search:
-  enable: true
+  enable: false
   hits:
     per_page: 10
   labels:
