@@ -399,7 +399,7 @@ needmoreshare2:
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-google_site_verification: Xyy9fg5uzmq0Ysc9cQNgP4xPutZF0sBaJsjSHK55zC0
+google_site_verification: RNVwJJw32eotPkPUqLM4rell2tXbic1eMfSTDaYi7sw
 
 # Google Analytics
 #google_analytics:
@@ -413,7 +413,7 @@ bing_site_verification: 914C9C1CBC7078C5E2AC612AD5C1CC6C
 #yandex_site_verification:
 
 # CNZZ count
-cnzz_siteid: 1265946080
+cnzz_siteid: 1271309313
 
 # Application Insights
 # See https://azure.microsoft.com/en-us/services/application-insights/
