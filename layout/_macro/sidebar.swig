@@ -83,7 +83,7 @@
 
           </nav>
 
-          {% if theme.documentSort %}
+          {% if theme.contact_me %}
             <div class="feed-link motion-element" style="margin-top: 20px;">
               <span>
                 项目
@@ -108,10 +108,10 @@
             {% endif %}
           </div>
 
-          {% if theme.Social %}
+          {% if theme.social_title %}
             <div class="feed-link motion-element">
               <span>
-                社交
+                联系我
               </span>
             </div>
           {% endif %}

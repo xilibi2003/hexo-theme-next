@@ -333,17 +333,20 @@
     {#####################}
     {### END POST BODY ###}
     {#####################}
-
-    {% if theme.wechat_subscriber.enabled and not is_index %}
-      <div>
-        {% include 'wechat-subscriber.swig' %}
-      </div>
+    {% if post.subscription != true %}
+      {% if theme.wechat_subscriber.enabled and not is_index %}
+        <div>
+          {% include 'wechat-subscriber.swig' %}
+        </div>
+      {% endif %}
     {% endif %}
 
-    {% if (theme.alipay or theme.wechatpay or theme.bitcoin) and not is_index %}
-      <div>
-        {% include 'reward.swig' %}
-      </div>
+    {% if post.reward != true %}
+      {% if (theme.alipay or theme.wechatpay or theme.bitcoin) and not is_index %}
+        <div>
+          {% include 'reward.swig' %}
+        </div>
+      {% endif %}
     {% endif %}
 
     {% if theme.post_copyright.enable and not is_index %}
@@ -351,7 +354,7 @@
         {% include 'post-copyright.swig' with { post: post } %}
       </div>
     {% endif %}
-
+    
     <footer class="post-footer">
       {% if post.tags and post.tags.length and not is_index %}
         <div class="post-tags">

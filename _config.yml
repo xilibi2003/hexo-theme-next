@@ -32,9 +32,9 @@ favicon:
 # Set rss to specific value if you have burned your feed already.
 rss: "/atom.xml"
 
-documentSort: true
+contact_me: true
 
-Social: true
+social_title: true
 
 footer:
   # Specify the date when the site was setup.
@@ -595,7 +595,7 @@ tabs:
 
 # Use velocity to animate everything.
 motion:
-  enable: true
+  enable: false
   async: false
   transition:
     # Transition variants:
