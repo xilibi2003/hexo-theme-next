@@ -83,15 +83,39 @@
 
           </nav>
 
-          {% if theme.rss %}
-            <div class="feed-link motion-element">
-              <a href="{{ url_for(theme.rss) }}" rel="alternate">
-                <i class="fa fa-rss"></i>
-                RSS
-              </a>
+          {% if theme.contact_me %}
+            <div class="feed-link motion-element" style="margin-top: 20px;">
+              <span>
+                项目
+              </span>
             </div>
           {% endif %}
 
+          <div class="links-of-author project motion-element">
+            {% if theme.project %}
+              {% for name, link in theme.project %}
+                <span class="links-of-author-item">
+                  <a href="{{ link.split('||')[0] | trim }}" target="_self" title="{{ name }}">
+                    {% if theme.project_icons.enable %}
+                      <i class="fa fa-fw fa-{{ link.split('||')[1] | trim | default('globe') }}"></i>{#
+                  #}{% endif %}{#
+                    #}{% if not theme.project_icons.icons_only %}{#
+                      #}{{ name }}{#
+                    #}{% endif %}{#
+                #}</a>
+                </span>
+              {% endfor %}
+            {% endif %}
+          </div>
+
+          {% if theme.social_title %}
+            <div class="feed-link motion-element">
+              <span>
+                联系我
+              </span>
+            </div>
+          {% endif %}
+          
           <div class="links-of-author motion-element">
             {% if theme.social %}
               {% for name, link in theme.social %}
@@ -108,6 +132,16 @@
               {% endfor %}
             {% endif %}
           </div>
+
+          {% if theme.rss %}
+            <div class="feed-link motion-element">
+              <a href="{{ url_for(theme.rss) }}" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          {% endif %}
+
 
           {% set cc = {'by': 1, 'by-nc': 1, 'by-nc-nd': 1, 'by-nc-sa': 1, 'by-nd': 1, 'by-sa': 1, 'zero': 1} %}
           {% if theme.creative_commons in cc %}

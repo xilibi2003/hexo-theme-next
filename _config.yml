@@ -32,6 +32,10 @@ favicon:
 # Set rss to specific value if you have burned your feed already.
 rss: "/atom.xml"
 
+contact_me: true
+
+social_title: true
+
 footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
