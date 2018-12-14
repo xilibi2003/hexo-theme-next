@@ -11,7 +11,7 @@
 {% block content %}
   <section id="posts" class="posts-expand">
     {% for post in page.posts %}
-      {% if post.project != true %}
+      {% if post.hide_in_home != true %}
         {{ post_template.render(post, true) }}
       {% endif %}
     {% endfor %}

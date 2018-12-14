@@ -333,7 +333,7 @@
     {#####################}
     {### END POST BODY ###}
     {#####################}
-    {% if post.subscription != true %}
+    {% if post.un_subscription != true %}
       {% if theme.wechat_subscriber.enabled and not is_index %}
         <div>
           {% include 'wechat-subscriber.swig' %}
@@ -341,7 +341,7 @@
       {% endif %}
     {% endif %}
 
-    {% if post.reward != true %}
+    {% if post.un_reward != true %}
       {% if (theme.alipay or theme.wechatpay or theme.bitcoin) and not is_index %}
         <div>
           {% include 'reward.swig' %}
